@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!--adapt screen to mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gary's gardening tips</title>
+    </head>
+    <style>
+        body {
+            margin: 0 8px;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+        }
+        .left {
+            border: 1px solid red;
+            flex: 0 0 100px;
+        }
+        .right {
+            border: 1px solid red;
+            flex: 0 0 100px;
+        }
+        .blogs {
+            border: 1px solid green;
+            flex-grow: 1;
+        }
+    </style>
+
+    <body>
+        <header>
+            <object data="holy-grail-logo.svg" width="30" height="30"></object>
+            <h1>Gary's gardening tips</h1>
+        </header>
+        <main>
+            <aside class="left">
+                <div>links</div>
+            </aside>
+
+            <div class="blogs">
+                there will be blog posts
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quasi dolorem obcaecati fugit ex corrupti voluptatum! Nobis
+                    at nesciunt voluptate est quisquam eveniet, incidunt nemo
+                    molestias dicta natus cum itaque explicabo debitis quasi
+                    nisi temporibus quibusdam veritatis officiis quia hic ullam
+                    veniam dolorum optio. Ratione dolorum quis omnis veniam
+                    iusto sequi!
+                </div>
+
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quasi dolorem obcaecati fugit ex corrupti voluptatum! Nobis
+                    at nesciunt voluptate est quisquam eveniet, incidunt nemo
+                    molestias dicta natus cum itaque explicabo debitis quasi
+                    nisi temporibus quibusdam veritatis officiis quia hic ullam
+                    veniam dolorum optio. Ratione dolorum quis omnis veniam
+                    iusto sequi!
+                </div>
+            </div>
+            <aside class="right">
+                <div>links</div>
+            </aside>
+        </main>
+        <footer>Copyright</footer>
+    </body>
+</html>
